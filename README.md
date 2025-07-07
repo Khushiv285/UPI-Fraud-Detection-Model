@@ -1,34 +1,4 @@
-Developed a supervised machine learning model to detect fraudulent UPI (Unified Payments Interface) transactions.
+This project focuses on detecting fraudulent transactions in UPI (Unified Payments Interface) systems using machine learning techniques. It involves end-to-end data processing, feature engineering, model building, and evaluation to identify patterns and anomalies that signify potential fraud. The dataset includes various transaction features such as transaction type, payment gateway, merchant category, amount, and more. After thorough preprocessing and encoding of categorical variables, several machine learning algorithms including Decision Tree, Random Forest, Gradient Boosting, and XGBoost were implemented and compared based on performance metrics like accuracy, precision, recall, F1-score, and ROC-AUC. The best-performing model was serialized using pickle and integrated into a simple Flask web application, allowing users to input transaction details and receive real-time predictions on whether the transaction is fraudulent. This project demonstrates a practical application of machine learning in the fintech domain, highlighting the importance of predictive modeling in enhancing the security of digital payment systems.
 
-Imported and preprocessed a dataset including features such as transaction type, payment gateway, transaction state, merchant category, etc.
-
-Conducted exploratory data analysis (EDA) using pandas, matplotlib, and seaborn to identify patterns and correlations related to fraud.
-
-Applied feature engineering techniques including:
-
----Handling missing values
----Encoding categorical variables with one-hot encoding
----Normalizing or scaling numerical features
-
-Trained and evaluated multiple machine learning models including:
-
---Decision Tree Classifier
---Random Forest Classifier
---Gradient Boosting Classifier
---XGBoost Classifier
-
-Used evaluation metrics like Accuracy, Precision, Recall, F1 Score, and ROC AUC Score to compare model performance.
-
-Visualized model performance using bar plots and confusion matrices.
-
-Saved the best-performing model using pickle for deployment.
-
-Deployed the model through a Flask web application for real-time fraud prediction.
-
-🛠 Tech Stack:
---Python, Pandas, NumPy, Matplotlib, Seaborn
---Scikit-learn, XGBoost
---Flask (for deployment)
---Jupyter Notebook
 
 
